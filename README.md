@@ -8,11 +8,12 @@ To write a program to implement the K Means Clustering for Customer Segmentation
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1.Load and preprocess data by checking for missing values and selecting relevant features for clustering.  
-2.Use the Elbow Method to determine the optimal number of clusters by calculating the WCSS for different values of k.  
-3.Apply KMeans Clustering with the optimal number of clusters to segment customers based on the selected features.  
-4.Visualize the clusters by plotting each cluster on a scatter plot to show customer segments based on annual income and spending score.  
- 
+1. Load and Inspect Data: Load the Mall_Customers.csv dataset, check for missing values, and display the first few rows.
+2. Elbow Method: Use the Elbow method by calculating the Within-Cluster Sum of Squares (WCSS) for clusters from 1 to 10 and plot the results to determine the optimal number of clusters.
+3. Apply KMeans: Apply KMeans clustering with 5 clusters (from the Elbow method), and assign the resulting cluster labels (y_pred) to the data.
+4. Assign Clusters: Add the cluster labels as a new column in the dataset (cluster).
+5. Segment Data: Create separate dataframes (df0, df1, etc.) for each cluster.
+6. Plot Results: Plot the customer segments based on Annual Income (k$) and Spending Score (1-100) with different colors for each cluster.
 ## Program:
 ```
 /*
